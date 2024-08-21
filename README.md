@@ -14,3 +14,6 @@ $ python src/kchat/kafka/pd.py
 ```
 ### result
 
+![image](https://github.com/user-attachments/assets/21dc639a-4635-40c7-9961-869eeb00c8af)
+
+
