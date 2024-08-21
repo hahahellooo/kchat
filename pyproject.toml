@@ -1,7 +1,7 @@
 [project]
 name = "kchat"
 version = "0.2.0"
-description = ""
+description = "python message app using kafka"
 authors = [
     {name = "hahahellooo", email = "hahahello777@gmail.com"},
 ]
