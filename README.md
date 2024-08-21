@@ -17,4 +17,6 @@ $ $KAFKA_HOME/bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bo
 
 ![image](https://github.com/user-attachments/assets/21dc639a-4635-40c7-9961-869eeb00c8af)
 
+![image](https://github.com/user-attachments/assets/edb7815d-d915-4cbb-b82b-0a225681ee60)
+
 
