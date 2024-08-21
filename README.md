@@ -11,6 +11,7 @@ kafka-python>=2.0.2
 ### Python test
 ```bash
 $ python src/kchat/kafka/pd.py
+$ $KAFKA_HOME/bin/kafka-console-consumer.sh --topic topic1 --from-beginning --bootstrap-server localhost:9092
 ```
 ### result
 
