@@ -4,7 +4,7 @@ import time
 import json
 
 p = KafkaProducer(
-        bootstrap_servers=['localhost:9092'],
+        bootstrap_servers=['13.125.118.73:9092'],
         value_serializer=lambda x:json.dumps(x).encode('utf-8')
 )
 
@@ -18,7 +18,7 @@ while True:
         break
 
     data = {'message': msg, 'time': time.time()}
-    p.send('chat', value=data)
+    p.send('input', value=data)
     p.flush()
     time.sleep(1)
 
