@@ -17,7 +17,8 @@ print("메시지 대기 중 ...")
 try:
     for m in consumer:
         data = m.value
-        print(f"[FRIEND] {data['message']} {data['time']}" )
+        sender = data['sender']
+        print(f"[{sender}] {data['message']} 시간: {data['time']}" )
 
 except KeyboardInterrupt:
     print("채팅 종료")

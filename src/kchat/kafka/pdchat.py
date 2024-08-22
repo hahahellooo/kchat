@@ -1,6 +1,6 @@
 from kafka import KafkaProducer
 from json import dumps
-import time
+import time, datetime
 import json
 
 p = KafkaProducer(
@@ -17,7 +17,7 @@ while True:
     if msg.lower() == 'exit':#대소문자 구문없이 exit를 받음
         break
 
-    data = {'message': msg, 'time': time.time()}
+    data = {'sender' : '정미은', 'message': msg, 'time': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
     p.send('input', value=data)
     p.flush()
     time.sleep(1)
